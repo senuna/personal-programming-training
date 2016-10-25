@@ -1,2 +1,6 @@
 # personal-programming-training
-Bunch of code I write following courses, tutorials and chellanges. 
+
+This repository presents bunch of code that I write following courses, tutorials and challanges. 
+Please, consider it as my training portfolio.
+
+More detailed information can be found in Project Wiki. 
