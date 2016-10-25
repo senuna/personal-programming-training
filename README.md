@@ -1,4 +1,4 @@
-# personal-programming-training
+# programming-personal-training
 
 This repository presents bunch of code that I write following courses, tutorials and challanges. 
 Please, consider it as my training portfolio.
