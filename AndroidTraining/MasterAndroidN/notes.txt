@@ -1,0 +1,6 @@
+1. Layout could not be loaded and refresh doesn't work:
+   Go to File->Invalidate caches / Restart. 
+
+
+
+
