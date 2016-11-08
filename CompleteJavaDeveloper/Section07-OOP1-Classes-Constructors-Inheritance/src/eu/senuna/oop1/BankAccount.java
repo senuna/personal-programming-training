@@ -21,11 +21,23 @@ public class BankAccount {
 
     public BankAccount(int accountNumber, float balance, String customerName, String email, int phoneNumber) {
         System.out.println("Constructor with parameters: ");
+        //senuna: it could be called by setters, but is not recommended!
+        // ex. there could be some validation that don't allow code to execute.
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, int phoneNumber) {
+//        this.customerName = customerName;
+//        this.email = email;
+//        this.phoneNumber = phoneNumber;
+
+//     adventage is that we can set some fields by default
+//        it's better to set it that way and call main constructor.
+        this(646846, 125, customerName, email, phoneNumber);
     }
 
     public int getAccountNumber() {
@@ -79,7 +91,7 @@ public class BankAccount {
     }
 
     public void withdrawal(double withdrawalFunds) {
-        if ((this.balance - withdrawalFunds) <= 0) {
+        if ((this.balance - withdrawalFunds) < 0) {
             System.out.println("Not enough money.");
         } else {
             this.balance -= withdrawalFunds;

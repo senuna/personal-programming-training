@@ -5,7 +5,7 @@ package eu.senuna.oop1;
  */
 public class Main {
     public static void main(String[] args) {
-
+        //region Car class
         Car autko = new Car();
         Car porshe = new Car();
 
@@ -17,7 +17,9 @@ public class Main {
         System.out.println("Engine "+ autko.getEngine());
         autko.setEngine("blahblah");
         System.out.println("Engine "+ autko.getEngine());
+        //endregion
 
+        //region BankAccount challenge
         // Create a new class for a bank account
         // Create fields for the account number, balance, customer name, email and phone number.
         //
@@ -49,6 +51,38 @@ public class Main {
         inezAccount.deposit(50);
         inezAccount.withdrawal(302);
 
+        BankAccount mamasAccount = new BankAccount("Helena","mamas@mail.eu", 23549 );
+        System.out.println(mamasAccount.getAccountNumber() + " name "+ mamasAccount.getCustomerName());
+        //endregion
+
+        //region VipCustomer Challenge
+        // Create a new class VipCustomer
+        // it should have 3 fields name, credit limit, and email address.
+        // create 3 constructors
+        // 1st constructor empty should call the constructor with 3 parameters with default values
+        // 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
+        // 3rd constructor should save all fields.
+        // create getters only for this using code generation of intellij as setters wont be needed
+        // test and confirm it works.
+
+        VipPerson man1 = new VipPerson();
+        System.out.println(
+                "Name " + man1.getName() +
+                        " credit limit " + man1.getCreditLimit() +
+                        " email " + man1.getEmailAdress());
+
+        VipPerson man2 = new VipPerson("Xray Master", 10000);
+        System.out.println(
+                "Name " + man2.getName() +
+                        " credit limit " + man2.getCreditLimit() +
+                        " email " + man2.getEmailAdress());
+
+        VipPerson man3 = new VipPerson("Dr Strange", 15000, "strange@doctor.com");
+        System.out.println(
+                "Name " + man3.getName() +
+                        " credit limit " + man3.getCreditLimit() +
+                        " email " + man3.getEmailAdress());
+        //endregion
 
     }
 }
