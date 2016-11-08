@@ -1,11 +1,18 @@
-package eu.senuna.oop1;
+package eu.senuna.oop1.classesconstructors;
+
+import eu.senuna.oop1.classesconstructors.BankAccount;
+import eu.senuna.oop1.classesconstructors.Car;
+import eu.senuna.oop1.classesconstructors.VipPerson;
+import eu.senuna.oop1.inheritance.Animal;
 
 /**
  * Created by senuna on 07.11.16.
  */
 public class Main {
     public static void main(String[] args) {
-        //region Car class
+
+        //region classes and constructors
+        //region Car
         Car autko = new Car();
         Car porshe = new Car();
 
@@ -17,7 +24,7 @@ public class Main {
         System.out.println("Engine "+ autko.getEngine());
         autko.setEngine("blahblah");
         System.out.println("Engine "+ autko.getEngine());
-        //endregion
+        //endregion -
 
         //region BankAccount challenge
         // Create a new class for a bank account
@@ -83,6 +90,9 @@ public class Main {
                         " credit limit " + man3.getCreditLimit() +
                         " email " + man3.getEmailAdress());
         //endregion
+
+        //endregion
+
 
     }
 }

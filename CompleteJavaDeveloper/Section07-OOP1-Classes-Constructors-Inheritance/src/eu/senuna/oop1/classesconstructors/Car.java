@@ -1,4 +1,4 @@
-package eu.senuna.oop1;
+package eu.senuna.oop1.classesconstructors;
 
 /**
  * Created by senuna on 07.11.16.
