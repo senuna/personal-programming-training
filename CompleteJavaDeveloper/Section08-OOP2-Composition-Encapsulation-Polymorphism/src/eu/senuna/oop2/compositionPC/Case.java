@@ -1,4 +1,4 @@
-package eu.senuna.oop2.composition;
+package eu.senuna.oop2.compositionPC;
 
 /**
  * Created by senuna on 09.11.16.

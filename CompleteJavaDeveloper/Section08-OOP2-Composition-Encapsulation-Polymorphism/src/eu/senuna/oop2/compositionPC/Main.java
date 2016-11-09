@@ -1,4 +1,4 @@
-package eu.senuna.oop2.composition;
+package eu.senuna.oop2.compositionPC;
 
 /**
  * Created by senuna on 08.11.16.
@@ -14,9 +14,11 @@ public class Main {
 
         //senuna: let the show begin!
         PC thePC = new PC(theCase, theMonitor, motherboard);
-        thePC.getMonitor().drawPixelAt(1500,1200,"red");
-        thePC.getMotherboard().loadProgram("Windows sucks!");
-        thePC.getTheCase().pressPowerButton();
+//        thePC.getMonitor().drawPixelAt(1500,1200,"red");
+//        thePC.getMotherboard().loadProgram("Windows sucks!");
+//        thePC.getTheCase().pressPowerButton();
+        thePC.powerUp();
+
 
     }
 }
