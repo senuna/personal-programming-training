@@ -85,7 +85,7 @@ public class Main {
         }
 
         //look especially for nr 5!
-        // it takest plo() from 
+        // it takest plot() from base Movie class, even if in Forgetable is no such method
     }
 
     public static Movie randomMovie(){
