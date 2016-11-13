@@ -35,5 +35,17 @@ package eu.senuna;
 public class Main {
     public static void main(String[] args) {
 
+        Hamburger hamburger = new Hamburger("Basic", "kielbasa", 2.18, "wheat");
+        double price = hamburger.itemizeHamburger();
+        hamburger.addHamburgerAddition1("Cheese", 0.12);
+        hamburger.addHamburgerAddition2("Salad", 0.48);
+        hamburger.addHamburgerAddition3("paprika", 3.56);
+        System.out.println("Total price " + hamburger.itemizeHamburger());
+
+        HealtyBurger healtyBurger = new HealtyBurger("Bacon", 2.12);
+        healtyBurger.addHamburgerAddition1("ojc",5.47);
+
+        healtyBurger.addHealthyAddition1("zdrowko", 4.56);
+
     }
 }
