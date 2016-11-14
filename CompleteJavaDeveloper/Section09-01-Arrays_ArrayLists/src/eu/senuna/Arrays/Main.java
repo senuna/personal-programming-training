@@ -1,4 +1,4 @@
-package eu.senuna;
+package eu.senuna.Arrays;
 
 import java.util.Scanner;
 
@@ -34,6 +34,8 @@ public class Main {
         //endregion
 
         //region
+        //given code had cardcoded 5 indexes array - I changed it to provided by user
+
         int[] myIntegeres = getIntegers();
         for (int i = 0; i < myIntegeres.length; i++ ){
             System.out.println("Element " + i + " was given value " + myIntegeres[i]);
@@ -55,7 +57,6 @@ public class Main {
             System.out.println("enter number for fill array index " + i );
             values[i] = scanner.nextInt();
         }
-
         return values;
     }
 
@@ -66,7 +67,6 @@ public class Main {
         }
         return (double) sum / (double) array.length;
     }
-
 
     public static void printArray(int[] array){
         for (int i=0; i<array.length; i++){
