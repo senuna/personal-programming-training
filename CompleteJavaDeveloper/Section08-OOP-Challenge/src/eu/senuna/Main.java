@@ -47,5 +47,9 @@ public class Main {
 
         healtyBurger.addHealthyAddition1("zdrowko", 4.56);
 
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        deluxeBurger.addHamburgerAddition3("cosiek",12.23);
+        System.out.println(deluxeBurger.itemizeHamburger());
+
     }
 }
