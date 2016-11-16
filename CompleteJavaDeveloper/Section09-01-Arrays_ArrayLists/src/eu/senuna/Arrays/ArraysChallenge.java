@@ -1,6 +1,5 @@
 package eu.senuna.Arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -28,7 +27,7 @@ public class ArraysChallenge {
         System.out.println("enter number for indexes of array \r");
         int number = scanner.nextInt();
 
-        int[] myIntegers = getIntegers(3);
+        int[] myIntegers = getIntegers(number);
         int[] sorted = sortIntegers(myIntegers);
         printArray(sorted);
 
