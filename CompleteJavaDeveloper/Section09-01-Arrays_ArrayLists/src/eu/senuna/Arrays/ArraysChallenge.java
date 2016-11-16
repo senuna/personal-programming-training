@@ -1,5 +1,6 @@
 package eu.senuna.Arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -27,28 +28,58 @@ public class ArraysChallenge {
         System.out.println("enter number for indexes of array \r");
         int number = scanner.nextInt();
 
-        int[] myIntegers = getIntegers(number);
+        int[] myIntegers = getIntegers(3);
+        int[] sorted = sortIntegers(myIntegers);
+        printArray(sorted);
+
 
 
     }
 
-    public static int[] getIntegers(int size){
+    public static int[] getIntegers(int size) {
         int[] array = new int[size];
         System.out.println("Please provide " + size + " integer values: \r");
-        for (int i=0; i<array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
         }
-        return  array;
+        return array;
     }
 
-    public static void printArray(int[] array){
-        for (int i=0; i<array.length; i++){
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
             System.out.println("Indeks " + i + " contents " + array[i]);
         }
     }
 
-    public static int[] sortIntegers(int[] array){
-        
+    public static int[] sortIntegers(int[] array) {
+        int[] sortedArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            sortedArray[i] = array[i];
+        }
+
+
+//        //new array, copied from other one
+//        int[] sortedArray = Arrays.copyOf(array, array.length);
+
+
+        //senuna: the most important part! :)
+
+        boolean flag = true;
+        int temp;
+        while (flag) {
+            flag = false;
+            //be carrefull - lenght -1 - if not - ou of bound exception!
+            for (int i = 0; i < sortedArray.length-1; i++) {
+                if (sortedArray[i] < sortedArray[i + 1]) {
+                    //senuna: ordinary swap
+                    temp = sortedArray[i];
+                    sortedArray[i] = sortedArray[i + 1];
+                    sortedArray[i + 1] = temp;
+                    flag = true;
+                }
+            }
+        }
+        return sortedArray;
     }
 
 }
