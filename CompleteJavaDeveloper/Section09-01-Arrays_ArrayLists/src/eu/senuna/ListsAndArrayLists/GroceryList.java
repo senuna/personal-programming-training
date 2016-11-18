@@ -27,19 +27,25 @@ public class GroceryList {
         System.out.println("You just changed item number: " + (position+1) + " from your list");
     }
 
+    public void modifyGroceryItem(String newItem){
+        int position = findItem(newItem);
+        if(position >=)
+    }
+
     public void removeGroceryItem(int position){
         //TODO: change for positions
         String theItem = groceryList.get(position);
         groceryList.remove(position);
     }
 
-    public String findItem(String searchedItem){
+    public int findItem(String searchedItem){
+        return groceryList.indexOf(searchedItem);
 //        boolean exist = groceryList.contains(searchedItem); //contains() make a quick search for that item
-        int position = groceryList.indexOf(searchedItem);
-        if (position >= 0) {
-            return groceryList.get(position);
-        }
-        return null;
+//        int position = groceryList.indexOf(searchedItem);
+//        if (position >= 0) {
+//            return groceryList.get(position);
+//        }
+//        return null;
 
     }
 
