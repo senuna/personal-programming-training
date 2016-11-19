@@ -29,8 +29,12 @@ public class GroceryList {
 
     public void modifyGroceryItem(String newItem){
         int position = findItem(newItem);
-        if(position >=)
+        if(position >= 0){
+            modifyGroceryItem(position, newItem);
+        }
     }
+
+    
 
     public void removeGroceryItem(int position){
         //TODO: change for positions
