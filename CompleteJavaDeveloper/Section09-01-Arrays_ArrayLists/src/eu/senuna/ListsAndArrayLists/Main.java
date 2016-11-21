@@ -1,5 +1,6 @@
 package eu.senuna.ListsAndArrayLists;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -39,6 +40,9 @@ public class Main {
                     removeItem();
                     break;
                 case 6:
+                    processArrayList();
+                    break;
+                case 7:
                     quit = true;
                     break;
                 default:
@@ -66,12 +70,11 @@ public class Main {
     }
 
     public static void modifyItem(){
-        System.out.print("Enter item number: ");
-        int itemNo = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Enter new item name ");
+        System.out.print("Current item number: ");
+        String itemNo = scanner.nextLine();
+        System.out.println("Enter new item ");
         String newItemName = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo-1, newItemName);
+        groceryList.modifyGroceryItem(itemNo, newItemName);
     }
 
     public static void removeItem(){
@@ -84,10 +87,21 @@ public class Main {
     public static void searchForItem(){
         System.out.print("Enter the name of item to search for ");
         String searchItem = scanner.nextLine();
-        if(groceryList.findItem(searchItem) != null){
+        if(groceryList.onFile(searchItem)){
             System.out.println("Found " + searchItem + " in grocery list");
         } else {
             System.out.println(searchItem + " is not in the list");
         }
+    }
+
+    public static void processArrayList(){ //copying arrays
+        ArrayList<String> newArray = new ArrayList<>();
+        newArray.addAll(groceryList.getGroceryList()); //nice copying an array
+
+        ArrayList<String> nextArray = new ArrayList<>(groceryList.getGroceryList());
+
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray  = groceryList.getGroceryList().toArray(myArray); //!!!
+
     }
 }
