@@ -25,8 +25,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobilePhone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/mobilePhone.java">
+      <file leaf-file-name="MobilePhone.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/MobilePhone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#1588#1589#0" expanded="true" />
                 <element signature="e#1643#1644#0" expanded="true" />
@@ -84,9 +84,10 @@
         <option value="$PROJECT_DIR$/src/eu/senuna/ListsAndArrayLists/ArrayListIntro.java" />
         <option value="$PROJECT_DIR$/src/eu/senuna/ListsAndArrayLists/GroceryList.java" />
         <option value="$PROJECT_DIR$/src/eu/senuna/ListsAndArrayLists/Main.java" />
-        <option value="$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/Main.java" />
         <option value="$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/Contact.java" />
+        <option value="$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/Main.java" />
         <option value="$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/mobilePhone.java" />
+        <option value="$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/MobilePhone.java" />
       </list>
     </option>
   </component>
@@ -729,12 +730,12 @@
       <workItem from="1479582202971" duration="184000" />
       <workItem from="1479680971651" duration="615000" />
       <workItem from="1479765551427" duration="3376000" />
-      <workItem from="1479834108936" duration="3980000" />
+      <workItem from="1479834108936" duration="4781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33015000" />
+    <option name="totallyTimeSpent" value="33816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1073,10 +1074,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/mobilePhone.java">
+    <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/MobilePhone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#1588#1589#0" expanded="true" />
             <element signature="e#1643#1644#0" expanded="true" />
@@ -1086,8 +1087,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eu/senuna/ArrayListChallenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
           <folding />
         </state>
       </provider>

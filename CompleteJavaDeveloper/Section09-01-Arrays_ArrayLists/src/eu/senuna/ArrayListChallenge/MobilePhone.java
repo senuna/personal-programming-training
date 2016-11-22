@@ -5,12 +5,12 @@ import java.util.ArrayList;
 /**
  * Created by senuna on 22.11.16.
  */
-public class mobilePhone {
+public class MobilePhone {
 
     private String myNumber;
     private ArrayList<Contact> myContacts;
 
-    public mobilePhone(String myNumber){
+    public MobilePhone(String myNumber){
         this.myNumber = myNumber;
         this.myContacts = new ArrayList<Contact>(); //initializing just so clean
     }
