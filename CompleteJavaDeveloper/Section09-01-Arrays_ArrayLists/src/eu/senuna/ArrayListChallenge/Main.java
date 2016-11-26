@@ -76,13 +76,42 @@ public class Main {
         }
     }
 
+    private static void removeContact(){
+        System.out.println("Enter contact name you want to remove: ");
+        String name = scanner.nextLine();
+        Contact existingContact = mobilePhone.queryContact(name);
+        if(existingContact ==null){
+            System.out.println("Contact not found.");
+            return;
+        }
+
+        if(mobilePhone.removeContact(existingContact)){
+            System.out.println("Successfully deleted ");
+        } else {
+            System.out.println("some error occurred");
+        }
+    }
+
+    private static void queryContact(){
+        System.out.println("Enter existing contact name: ");
+        String name = scanner.nextLine();
+        Contact existingContact = mobilePhone.queryContact(name);
+        if(existingContact ==null){
+            System.out.println("Contact not found.");
+            return;
+        }
+        System.out.println("Name: "+ existingContact.getName()
+                + " phone number " + existingContact.getPhoneNumber());
+    }
+
+
     private static void updateContact(){
         System.out.println("Enter contact name existing in list: ");
         String name = scanner.nextLine();
         Contact existingContactRecord = mobilePhone.queryContact(name);
         if(existingContactRecord == null){
             System.out.println("Contact not found");
-            return null;
+            return;
         }
         System.out.println("Enter new contact name: ");
         String newName = scanner.nextLine();
@@ -110,7 +139,7 @@ public class Main {
         "4 - remove contact\n"+
         "5 - query if an contact exist\n"+
         "6 - print available actions");
-        System.out.println("chooce your action: ");
+        System.out.println("choose your action: ");
     }
 
 }
