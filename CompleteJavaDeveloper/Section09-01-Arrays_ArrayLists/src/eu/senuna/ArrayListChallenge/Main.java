@@ -68,7 +68,7 @@ public class Main {
         String name = scanner.nextLine();
         System.out.println("Enter phone number: ");
         String phoneNumber = scanner.nextLine();
-        Contact newContact = Contact.createRecord(name, phoneNumber); //easier way... becouse of static
+        Contact newContact = Contact.createRecord(name, phoneNumber); //easier way... becouse of static method instead of constructor
         if(mobilePhone.addNewContact(newContact)){
             System.out.println("New contact added: " + name + " , phone = " + phoneNumber);
         } else {
