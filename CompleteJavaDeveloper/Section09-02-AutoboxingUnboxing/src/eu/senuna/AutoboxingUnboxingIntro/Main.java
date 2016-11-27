@@ -1,4 +1,4 @@
-package eu.senuna.AutoboxingUnboxing;
+package eu.senuna.AutoboxingUnboxingIntro;
 
 import java.util.ArrayList;
 
