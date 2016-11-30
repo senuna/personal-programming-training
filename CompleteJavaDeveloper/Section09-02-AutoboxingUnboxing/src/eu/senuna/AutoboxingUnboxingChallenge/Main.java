@@ -26,4 +26,43 @@ package eu.senuna.AutoboxingUnboxingChallenge;
  * Created by senuna on 27.11.16.
  */
 public class Main {
+
+    public static void main(String[] args) {
+
+        Bank bank = new Bank("Royal Bank of Scotland ");
+        bank.addBranch("Comely");
+
+        bank.addCustomer("Comely", "Irmina", 24.23);
+        bank.addCustomer("Comely", "Toi", 12354.67);
+        bank.addCustomer("Comely", "Anna", 345.00);
+
+        bank.addBranch("Princess Street");
+        bank.addCustomer("Princess Street", "Maria", 6456.67);
+        bank.addCustomer("Princess Street", "Artur", 89.45);
+
+        bank.addCustomerTransaction("Princess Street", "Maria", 4.33);
+        bank.addCustomerTransaction("Princess Street", "Artur", 10.55);
+        bank.addCustomerTransaction("Comely","Anna",55.00);
+
+        bank.listCustomers("Princess Street", true);
+        bank.listCustomers("Comely", true);
+
+        if (!bank.addBranch("Comely")) {
+            System.out.println("Comely branch already exist");
+        }
+
+        if(!bank.addCustomerTransaction("Princess Street", "Artur", 235.85)){
+            System.out.println("Customer does not exist in a branch");
+        }
+
+        if (!bank.addCustomer("Comely", "Toi", 12354.67)) {
+            System.out.println("Customer already exist");
+        }
+
+        bank.addBranch("Queens");
+
+        if (bank.addCustomer("Queens", "Hugh", 2.32) != true) {
+            System.out.println("Error - Queens branch does not exist");
+        }
+    }
 }

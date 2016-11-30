@@ -58,8 +58,5 @@ public class Main {
             double value = myDoubleValues.get(i).doubleValue();
             System.out.println(i + " -> " + value);
         }
-
     }
-
-
 }
