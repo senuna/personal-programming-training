@@ -1,4 +1,6 @@
-package eu.senuna;
+package eu.senuna.intro;
+
+import eu.senuna.intro.Customer;
 
 import java.util.ArrayList;
 

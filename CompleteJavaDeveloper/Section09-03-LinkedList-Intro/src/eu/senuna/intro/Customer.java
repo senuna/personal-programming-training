@@ -1,4 +1,4 @@
-package eu.senuna;
+package eu.senuna.intro;
 
 /**
  * Created by senuna on 01.12.16.
