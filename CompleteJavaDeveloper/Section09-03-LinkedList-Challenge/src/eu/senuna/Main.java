@@ -18,6 +18,8 @@ package eu.senuna;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Scanner;
 
 /**
  * Created by senuna on 04.12.16.
@@ -61,6 +63,63 @@ public class Main {
         albums.get(1).addToPlaylist(7,playList);
         albums.get(1).addToPlaylist(245,playList);
 
+        play(playList);
 
+    }
+
+    private static void play(LinkedList<Song> playList){
+        Scanner scanner = new Scanner(System.in);
+        boolean quit = false;
+        boolean forward = true;
+
+        ListIterator<Song> listIterator = playList.listIterator();
+        if(playList.size() ==0){
+            System.out.println("No songs in this playlist");
+            return;
+        } else {
+            System.out.println("Now playing " + listIterator.next().toString());
+        }
+
+        while (!quit){
+            int action = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (action){
+                case 0:
+                    System.out.println("Playlist complete");
+                    quit = true;
+                    break;
+                case 1:
+                    if(!forward){
+                        if(listIterator.hasNext()){
+                            listIterator.next();
+                        }
+                        forward = true;
+                    }
+                    if(listIterator.hasNext()){
+                        System.out.println("Now playing " + listIterator.next().toString());
+                    } else {
+                        System.out.println("We habe reached the end of playlist");
+                        forward = false;
+                    }
+                    break;
+                case 2:
+                    if(forward){
+                        if(listIterator.hasPrevious()){
+                            System.out.println("Now playing " + listIterator.previous().toString());
+                            forward = true;
+                        }
+                    }
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    printList(playList);
+                    break;
+                case 5:
+                    printMenu();
+                    break;
+            }
+        }
     }
 }
