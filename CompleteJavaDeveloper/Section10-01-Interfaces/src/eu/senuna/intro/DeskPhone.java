@@ -1,7 +1,7 @@
-package eu.senuna;
+package eu.senuna.intro;
 
 /**
- * Created by senuna on 08.12.16.
+ * Created by eu.senuna.intro.eu.senuna on 08.12.16.
  */
 public class DeskPhone implements ITelephone {
     private  int myNumber;
